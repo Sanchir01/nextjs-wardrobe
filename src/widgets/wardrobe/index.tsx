@@ -111,7 +111,7 @@ const WardrobeGrid = ({ data }: { data: IWardrobeProps[] }) => {
 				<div className=' min-[998px]:hidden max-[998px]:grid  max-[998px]:grid-cols-3 place-items-center   max-[998px]:gap-x-5 max-[998px]:gap-y-5  max-[768px]:grid-cols-2 max-[576px]:grid-cols-1 max-[576px]:gap-y-[5px] gap-[10px] mt-4'>
 					{data.map((item, i) => (
 						<div
-							className='max-[768px]:max-w-[350px] max-[576px]:w-[300px] mt-4'
+							className='max-[998px]:w-[220px] max-[768px]:w-[280px]  max-[576px]:w-[300px] mt-4'
 							key={i}
 						>
 							<Image

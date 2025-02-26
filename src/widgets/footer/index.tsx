@@ -13,7 +13,7 @@ const footerColumnContent: IFooterColumn[] = [
 		links: [
 			{ title: 'системы хранения', href: '#wardrobe' },
 			{ title: 'двери', href: '#doors' },
-			{ title: 'О проекте', href: '#about' },
+			{ title: 'О нас', href: '#about' },
 			{ title: 'отзывы', href: '#reviews' }
 		]
 	},
