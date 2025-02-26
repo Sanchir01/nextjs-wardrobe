@@ -1,75 +1,34 @@
+import Image from 'next/image'
 import EmblaSlider from './DefaultSlider'
-import Image from './Image'
-import { Title } from './Title'
-import door1 from '/img/door.png'
-import door2 from '/img/door1.png'
-import door3 from '/img/door2.png'
-import door4 from '/img/door3.png'
-import door5 from '/img/door4.png'
-import door6 from '/img/door5.png'
-import door7 from '/img/door6.png'
 
-export const DoorsContent = [
-	{
-		href: door1,
-		alt: 'door',
-		loading: 'lazy'
-	},
-	{
-		href: door2,
-		alt: 'door',
-		loading: 'lazy'
-	},
-	{
-		href: door3,
-		alt: 'door',
-		loading: 'lazy'
-	},
-	{
-		href: door4,
-		alt: 'door',
-		loading: 'lazy'
-	},
-	{
-		href: door5,
-		alt: 'door',
-		loading: 'lazy'
-	},
-	{
-		href: door6,
-		alt: 'door',
-		loading: 'lazy'
-	},
-	{
-		href: door7,
-		alt: 'door',
-		loading: 'lazy'
-	}
-]
+import TitleBlock from './TitleBlock'
 
-const DoorsSlider = () => {
+export interface IDoorsSliderProps {
+	href: string
+	loading: string
+	alt: string
+}
+
+const DoorsSlider = ({ data }: { data: IDoorsSliderProps[] }) => {
 	return (
 		<section id='doors' className='mt-[150px] scroll-my-20 max-[768px]:mt-20'>
 			<div className='container'>
-				<div className='grid grid-cols-2 gap-5 max-[998px]:grid-cols-1 max-[998px]:place-items-center'>
-					<Title
-						text='наши двери-купе'
-						size='lg'
-						className='font-gilroy font-semibold uppercase col-start-2  max-[998px]:col-start-1 text-[clamp(1.125rem,0.765rem+1.373vw,2rem)] max-[998px]:text-center max-[768px]:leading-6'
-					/>
-				</div>
+				<TitleBlock title='наши двери купе' />
 				<div className='mt-5'>
 					<EmblaSlider classNameContainer='gap-5'>
-						{DoorsContent.map((item, i) => (
+						{data.map((item, i) => (
 							<article
 								className=' relative flex-none w-2/9 h-[350px] max-[768px]:w-1/2  max-[576px]:w-3/4  max-[576px]:h-70 '
 								key={i}
 							>
 								<Image
 									src={item.href}
-									alt={item.href}
-									classname='object-cover  w-full h-full block'
-									loading={item.loading}
+									alt={item.alt}
+									width={0}
+									height={0}
+									className='object-cover  w-full h-full block'
+									sizes='100vw'
+									loading={'lazy'}
 								/>
 							</article>
 						))}

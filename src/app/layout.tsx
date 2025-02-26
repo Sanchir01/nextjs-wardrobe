@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Header from '~/widgets/header'
+import Footer from '~/widgets/footer'
 
 export const metadata: Metadata = {
 	title: 'Системы хранения',
@@ -17,7 +19,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body className=''>{children}</body>
+			<body className=''>
+				<Header />
+				<main>
+					<div className='wrapper'>{children}</div>
+				</main>
+				<Footer />
+			</body>
 		</html>
 	)
 }

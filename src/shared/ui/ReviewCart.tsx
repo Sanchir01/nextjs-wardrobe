@@ -1,7 +1,8 @@
+'use client'
 import { useState } from 'react'
 import { Title } from './Title'
 import cn from 'clsx'
-import Image from './Image'
+import Image from 'next/image'
 export interface IReviewCartProps {
 	image: string
 	title: string
@@ -25,7 +26,10 @@ const ReviewCart = ({ alt, image, text, title, rating }: IReviewCartProps) => {
 					<Image
 						src={image}
 						alt={alt}
-						classname='object-cover rounded-full'
+						width={0}
+						height={0}
+						sizes='100vw'
+						className='object-cover rounded-full'
 						loading='lazy'
 					/>
 				</div>

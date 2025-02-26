@@ -1,4 +1,5 @@
 import { Title } from './Title'
+import TitleBlock from './TitleBlock'
 const AboutSection = () => {
 	return (
 		<section
@@ -6,14 +7,7 @@ const AboutSection = () => {
 			className='mt-[150px] max-[768px]:mt-20 max-[576px]:mt-10 scroll-my-20 '
 		>
 			<div className='container'>
-				<div className='grid grid-cols-2 gap-5 max-[998px]:grid-cols-1 max-[998px]:place-items-center'>
-					<Title
-						text='Организуйте свою систему хранения с умом!'
-						size='lg'
-						className='font-gilroy font-semibold uppercase col-start-2  max-[998px]:col-start-1 text-[clamp(1.125rem,0.765rem+1.373vw,2rem)] max-[998px]:text-center max-[768px]:leading-6'
-					/>
-				</div>
-
+				<TitleBlock title='Организуйте свою систему хранения с умом!' />
 				<div className='grid grid-cols-6 max-[998px]:hidden '>
 					<Title
 						text='системы хранения и двери-купе помогут навести  порядок и создать стильное пространство'

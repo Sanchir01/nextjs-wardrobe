@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Title } from '~/shared/ui/Title'
 
 export interface IFooterColumn {
@@ -42,7 +43,7 @@ const Footer = () => {
 											key={i}
 											className='text-[clamp(0.875rem,0.593rem+0.452vw,1rem)]'
 										>
-											<a href={content.href}>{content.title}</a>
+											<Link href={content.href}>{content.title}</Link>
 										</li>
 									))}
 								</ul>

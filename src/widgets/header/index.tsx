@@ -1,9 +1,11 @@
+'use client'
 import Button from '~/shared/ui/Button'
 import Logo from '~/shared/ui/Logo'
 import cn from 'clsx'
-import { useBurger, useSwitchHeader } from '~/app/store/useSwitchHeader'
+import { useBurger, useSwitchHeader } from '~/shared/store/useSwitchHeader'
 import { useShallow } from 'zustand/shallow'
 import { useMediaQuery } from '~/shared/hooks/useMediaQuery'
+import Link from 'next/link'
 
 export const HeaderNav = [
 	{
@@ -59,19 +61,19 @@ const Header = () => {
 						<ul className='flex gap-5 max-[768px]:flex-col max-[768px]:gap-7'>
 							{HeaderNav.map((item, i) => (
 								<li key={i}>
-									<a href={item.href}>{item.title}</a>
+									<Link href={item.href}>{item.title}</Link>
 								</li>
 							))}
 						</ul>
 					</nav>
 
 					<Button classname='px-4 py-2 uppercase text-sm max-[769px]:hidden max-[998px]:text-xs bg-white/50'>
-						<a
+						<Link
 							href='https://vk.com/sistemy_hranenia_dveri_kupe'
 							onClick={e => e.stopPropagation}
 						>
 							Закать звонок
-						</a>
+						</Link>
 					</Button>
 					<label
 						className={cn(

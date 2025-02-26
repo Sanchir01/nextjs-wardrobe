@@ -1,8 +1,10 @@
+'use client'
 import { useCallback } from 'react'
-import { useSwitchHeader } from '~/app/store/useSwitchHeader'
+import { useSwitchHeader } from '~/shared/store/useSwitchHeader'
 import { useIntersection } from '~/shared/hooks/useIntersection'
 import Button from '~/shared/ui/Button'
 import { Title } from '~/shared/ui/Title'
+import Link from 'next/link'
 const HeroBlock = () => {
 	const setState = useSwitchHeader(state => state.setSwitchHeader)
 
@@ -42,12 +44,12 @@ const HeroBlock = () => {
 							className='pt-15 text-[clamp(3.125rem,1.838rem+4.902vw,6.25rem)] leading-[clamp(2.625rem,1.692rem+6.114vw,7rem)] uppercase grid place-content-center font-gilroy text-center max-[576px]:text-left'
 						/>
 					</div>
-					<a
+					<Link
 						href='/'
 						className='underline text-lg pt-10 grid place-content-center max-[769px]:hidden'
 					>
 						заказать звонок
-					</a>
+					</Link>
 					<div className='text-[clamp(2.5rem,1.089rem+2.262vw,3.125rem)] max-w-1040px pt-20 grid place-content-center leading-16 mt-auto pb-[50px] max-[1280px]:leading-14 max-[998px]:leading-12 max-[769px]:hidden'>
 						<p className='ml-0'>Добро пожаловать</p>
 						<p className='ml-[150px] max-[1200px]:ml-12'>
@@ -59,9 +61,9 @@ const HeroBlock = () => {
 						<p className='ml-[500px] max-[1200px]:ml-36'>систем хранения!</p>
 					</div>
 					<Button classname='w-full text-lg py-[10px] min-[769px]:hidden  uppercase  mt-auto pb-3  max-[769px]:text-sm bg-custom-black text-w'>
-						<a href='/' className=' ' onClick={e => e.stopPropagation()}>
+						<Link href='/' className=' ' onClick={e => e.stopPropagation()}>
 							вызвать замерщика
-						</a>
+						</Link>
 					</Button>
 				</div>
 			</div>

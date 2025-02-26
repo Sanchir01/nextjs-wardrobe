@@ -1,8 +1,9 @@
+'use client'
 import useEmblaCarousel from 'embla-carousel-react'
 import { IChildren } from '../types'
 import cn from 'clsx'
 import { useCallback, useEffect, useState } from 'react'
-import Image from './Image'
+import Image from 'next/image'
 export interface IEmblaSliderProps extends IChildren {
 	classname?: string
 	arrows?: boolean
@@ -55,7 +56,9 @@ const EmblaSlider = ({
 						<Image
 							src={'/img/arrowl.svg'}
 							alt={'arrow left'}
-							classname={cn('cursor-pointer ', {
+							width={0}
+							height={0}
+							className={cn('cursor-pointer ', {
 								'opacity-70 cursor-not-allowed ': !canPrev,
 								'hover:opacity-70': canPrev
 							})}
@@ -65,7 +68,9 @@ const EmblaSlider = ({
 						<Image
 							src={'/img/arrowr.svg'}
 							alt={'arrow right'}
-							classname={cn('cursor-pointer', {
+							width={0}
+							height={0}
+							className={cn('cursor-pointer', {
 								'opacity-30 cursor-not-allowed ': !canNext,
 								'hover:opacity-70': canPrev
 							})}

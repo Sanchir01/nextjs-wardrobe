@@ -4,8 +4,7 @@ export default function Robots(): MetadataRoute.Robots {
 	return {
 		rules: {
 			userAgent: '*',
-			allow: '/*',
-			disallow: ['/admin', '/auth/*', '/order']
+			allow: '/*'
 		},
 		host: 'system-storage.ru',
 		sitemap: 'https://system-storage.ru/sitemap.xml'
