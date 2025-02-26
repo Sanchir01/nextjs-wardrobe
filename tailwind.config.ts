@@ -29,7 +29,8 @@ export default {
 			},
 			fontSize: {
 				h1: '',
-				h2: 'clamp(1.125rem,0.765rem+1.373vw,2rem)'
+				h2: 'clamp(1.125rem,0.765rem+1.373vw,2rem)',
+				footertitle: 'clamp(2.5rem,-2.5rem+10.417vw,6.875rem)'
 			}
 		}
 	},

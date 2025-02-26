@@ -49,12 +49,13 @@ const Header = () => {
 					<Logo classname=' max-[768px]:z-1' />
 					<nav
 						className={cn(
-							`text-white uppercase text-[clamp(0.75rem,0.571rem+0.476vw,1rem)]  transition-all duration-500 ease-in max-[768px]:fixed max-[768px]:top-0 max-[768px]:right-0
-							   max-[768px]:min-h-dvh max-[768px]:backdrop-blur  max-[768px]:supports-[backdrop-filter]:bg-background/60 max-[768px]:w-dvh
+							`text-white uppercase text-[clamp(0.75rem,0.571rem+0.476vw,1rem)] transition-all duration-500 ease-in
+							   max-[768px]:absolute max-[768px]:top-0 max-[768px]:right-0
+							   max-[768px]:min-h-dvh max-[768px]:backdrop-blur  max-[768px]:supports-[backdrop-filter]:bg-background/60 max-[768px]:max-w-[800px]
 							  `,
 							burger
 								? ' max-[768px]:left-0  max-[768px]:bg-black/90  max-[768px]:p-20'
-								: 'max-[768px]:left-[-2000px] '
+								: 'max-[768px]:left-[-10000px] '
 						)}
 						onClick={isMedia768 ? setBurger : () => {}}
 					>
