@@ -31,6 +31,16 @@ export const metadata: Metadata = {
 		type: 'website',
 		ttl: 20,
 		locale: 'ru'
+	},
+	metadataBase: new URL('https://system-storage.ru'),
+	formatDetection: {
+		email: true,
+		address: true,
+		telephone: true
+	},
+	authors: {
+		name: 'Sanchir01',
+		url: 'https://github.com/Sanchir01'
 	}
 }
 export const viewport: Viewport = {

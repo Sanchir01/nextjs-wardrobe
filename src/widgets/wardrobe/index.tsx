@@ -18,25 +18,25 @@ const WardrobeGrid = ({ data }: { data: IWardrobeProps[] }) => {
 					<div className='grid grid-cols-4 gap-5 font-normal '>
 						<div>
 							<Image
-								src='/img/wardrobe.png'
+								src={data[0].href}
 								width={0}
 								height={0}
 								sizes='100vw'
 								alt='wardrobe'
-								className='w-full h-full object-cover'
+								className='h-full w-full object-cover'
 							/>
-							<h6 className='mt-[10px]'>SpaceSaver</h6>
+							<h6 className='mt-[10px]'>{data[0].title}</h6>
 						</div>
 						<div>
 							<Image
-								src='/img/wardrobe1.png'
+								src={data[1].href}
 								width={0}
 								height={0}
 								sizes='100vw'
 								alt='wardrobe'
-								className='w-full h-full object-cover'
+								className='h-full w-full object-cover'
 							/>
-							<h6 className='mt-[10px]'>OrganizeIt</h6>
+							<h6 className='mt-[10px]'>{data[1].title}</h6>
 						</div>
 						<p>
 							Организуйте пространство с умом и стилем! Наши системы хранения и
@@ -44,14 +44,14 @@ const WardrobeGrid = ({ data }: { data: IWardrobeProps[] }) => {
 						</p>
 						<div>
 							<Image
-								src='/img/wardrobe2.png'
+								src={data[2].href}
 								alt='wardrobe'
 								width={0}
 								height={0}
 								sizes='100vw'
-								className='w-full h-full object-cover'
+								className='h-full w-full object-cover'
 							/>
-							<h6 className='mt-[10px]'>WardrobeWizard</h6>
+							<h6 className='mt-[10px]'>{data[2].title}</h6>
 						</div>
 					</div>
 					<div className='grid grid-cols-2 mt-12 gap-5 '>
@@ -59,14 +59,14 @@ const WardrobeGrid = ({ data }: { data: IWardrobeProps[] }) => {
 							<div className='grid grid-cols-2 gap-5'>
 								<div className=''>
 									<Image
-										src='/img/wardrobe3.png'
+										src={data[3].href}
 										alt='wardrobe'
 										width={0}
 										height={0}
 										sizes='100vw'
-										className=' object-cover '
+										className='h-full w-full object-cover'
 									/>
-									<h6 className='mt-[10px]'>ClosetPro</h6>
+									<h6 className='mt-[10px]'>{data[3].title}</h6>
 								</div>
 								<div className='' />
 							</div>
@@ -77,27 +77,27 @@ const WardrobeGrid = ({ data }: { data: IWardrobeProps[] }) => {
 								</p>
 								<div className=''>
 									<Image
-										src='/img/wardrobe4.png'
+										src={data[4].href}
 										alt='wardrobe'
 										width={0}
 										sizes='100vw'
 										height={0}
 										className='object-cover h-full w-full'
 									/>
-									<h6 className='mt-[10px]'>NeatStack</h6>
+									<h6 className='mt-[10px]'>{data[5].title}</h6>
 								</div>
 							</div>
 						</div>
-						<div className='max-w-[760px]'>
+						<div className='max-w-[760px] '>
 							<Image
 								width={0}
 								height={0}
-								src='/img/wardrobe5.png'
+								src={data[5].href}
 								alt='wardrobe'
 								sizes='100vw'
 								className='h-full w-full object-cover'
 							/>
-							<h6 className='mt-[10px]'>StyleBox</h6>
+							<h6 className='mt-[10px]'>{data[5].title}</h6>
 						</div>
 					</div>
 				</div>
@@ -110,14 +110,18 @@ const WardrobeGrid = ({ data }: { data: IWardrobeProps[] }) => {
 
 				<div className=' min-[998px]:hidden max-[998px]:grid  max-[998px]:grid-cols-3 place-items-center   max-[998px]:gap-x-5 max-[998px]:gap-y-5  max-[768px]:grid-cols-2 max-[576px]:grid-cols-1 max-[576px]:gap-y-[5px] gap-[10px] mt-4'>
 					{data.map((item, i) => (
-						<div className='max-[768px]:max-w-[350px] mt-4' key={i}>
+						<div
+							className='max-[768px]:max-w-[350px] max-[576px]:w-[300px] mt-4'
+							key={i}
+						>
 							<Image
 								src={item.href}
 								width={0}
 								height={0}
 								sizes='100vw'
-								className='h-full w-full object-cover max-h-[350px]'
-								alt='wardrobe'
+								className='h-full w-full object-cover '
+								loading='lazy'
+								alt={item.title}
 							/>
 							<h6 className='mt-[10px]'>{item.title}</h6>
 						</div>

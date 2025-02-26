@@ -6,7 +6,7 @@ const TitleBlock = ({ title }: { title: string }) => {
 			<Title
 				text={title}
 				size='lg'
-				className='font-gilroy font-semibold uppercase col-start-2  max-[998px]:col-start-1 text-h2 max-[998px]:text-center max-[768px]:leading-6'
+				className='font-gilroy font-semibold uppercase col-start-2  max-[998px]:col-start-1 text-[clamp(1.125rem,0.765rem+1.373vw,2rem)] max-[998px]:text-center max-[768px]:leading-6'
 			/>
 		</div>
 	)

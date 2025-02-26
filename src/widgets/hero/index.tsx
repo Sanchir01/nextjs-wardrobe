@@ -45,10 +45,10 @@ const HeroBlock = () => {
 						/>
 					</div>
 					<Link
-						href='/'
+						href='https://vk.com/sistemy_hranenia_dveri_kupe'
 						className='underline text-lg pt-10 grid place-content-center max-[769px]:hidden'
 					>
-						заказать звонок
+						Все товары
 					</Link>
 					<div className='text-[clamp(2.5rem,1.089rem+2.262vw,3.125rem)] max-w-1040px pt-20 grid place-content-center leading-16 mt-auto pb-[50px] max-[1280px]:leading-14 max-[998px]:leading-12 max-[769px]:hidden'>
 						<p className='ml-0'>Добро пожаловать</p>
