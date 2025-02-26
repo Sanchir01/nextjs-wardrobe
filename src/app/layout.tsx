@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Header from '~/widgets/header'
 import Footer from '~/widgets/footer'
+import YandexMetrika from '~/providers'
 
 export const metadata: Metadata = {
 	title: 'Системы хранения',
@@ -60,6 +61,8 @@ export default function RootLayout({
 				</main>
 				<Footer />
 			</body>
+
+			<YandexMetrika enabled={!!(process.env.NODE_ENV === 'production')} />
 		</html>
 	)
 }
