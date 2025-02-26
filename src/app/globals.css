@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Inter-Display';
+	src: url('/fonts/InterDisplay-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter-Display';
+	src: url('/fonts/InterDisplay-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter-Display';
+	src: url('/fonts/InterDisplay-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter-Display';
+	src: url('/fonts/InterDisplay-ExtraBold.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('/fonts/Gilroy-Semibold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('/fonts/Gilroy-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@theme {
+	--font-gilroy: 'Gilroy', sans-serif;
+	--color-custom-white: #f9f9f9;
+	--color-custom-black: #101010;
+	--color-gray: #d2d2d2;
+	--text-title: clamp(1.125rem, 0.729rem + 1.69vw, 2.25rem);
+	--text-clamp-hero: clamp(2.875rem, 1.571rem+6.518vw, 7.438rem);
+	--text-clamp-header-nav: clamp(0.875rem, 0.824rem+0.196vw, 1rem);
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,8 +66,36 @@
   }
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Inter-Display';
+	font-weight: 500;
+	@apply bg-custom-white;
+}
+.container {
+	max-width: 1500px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+.container img {
+	width: 100%;
+}
+.wrapper {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 1500px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
 }
