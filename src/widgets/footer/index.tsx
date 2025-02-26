@@ -25,7 +25,10 @@ const footerColumnContent: IFooterColumn[] = [
 		]
 	},
 	{
-		links: [{ title: '+79213595153', href: 'tel:+79213595153' }]
+		links: [
+			{ title: '+79213595153', href: 'tel:+79213595153' },
+			{ title: 'Работаем пн-пт с 9 до 22', href: '' }
+		]
 	}
 ]
 
