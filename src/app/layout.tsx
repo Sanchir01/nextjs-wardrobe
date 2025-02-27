@@ -14,7 +14,6 @@ export const metadata: Metadata = {
 		'Купите качественные системы хранения и двери-купе в Санкт-Петербурге по выгодным ценам',
 	keywords:
 		'titangs, системы хранения, Системы хранения, двери купе, двери-купе, двери, купе, хранения, двери-купе купить, wardrobe',
-
 	robots: 'index, follow',
 	icons: { icon: 'favicon.ico' },
 	openGraph: {

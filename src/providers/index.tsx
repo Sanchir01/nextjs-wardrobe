@@ -2,7 +2,7 @@
 import { Router } from 'next/router'
 import { useCallback, useEffect } from 'react'
 import ym, { YMInitializer } from 'react-yandex-metrika'
-const account = 100072646
+const account = 100081127
 const YandexMetrika = ({ enabled }: { enabled: boolean }) => {
 	const hit = useCallback(
 		(url: string) => {
