@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '~/widgets/header'
 import Footer from '~/widgets/footer'
 import YandexMetrika from '~/providers'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
 	title: 'Системы хранения',
@@ -55,6 +56,25 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
+			<head>
+				<Script
+					id='tmr-code'
+					strategy='afterInteractive'
+					dangerouslySetInnerHTML={{
+						__html: `
+							var _tmr = window._tmr || (window._tmr = []);
+							_tmr.push({id: "3618541", type: "pageView", start: (new Date()).getTime(), pid: "USER_ID"});
+							(function (d, w, id) {
+								if (d.getElementById(id)) return;
+								var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+								ts.src = "https://top-fwz1.mail.ru/js/code.js";
+								var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+								if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+							})(document, window, "tmr-code");
+						`
+					}}
+				/>
+			</head>
 			<body className=''>
 				<Header />
 				<main>
