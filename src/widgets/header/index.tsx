@@ -69,10 +69,7 @@ const Header = () => {
 					</nav>
 
 					<Button classname='px-4 py-2 uppercase text-sm max-[769px]:hidden max-[998px]:text-xs bg-white/50'>
-						<Link
-							href='https://vk.com/sistemy_hranenia_dveri_kupe'
-							onClick={e => e.stopPropagation}
-						>
+						<Link href='tel:+79213595153' onClick={e => e.stopPropagation}>
 							Закать звонок
 						</Link>
 					</Button>

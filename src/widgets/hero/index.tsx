@@ -19,7 +19,7 @@ const HeroBlock = () => {
 			ref={observeRef}
 			id='hero'
 			className={
-				"bg-[url('/img/heroBg.png')] min-h-dvh bg-no-repeat bg-center bg-cover text-white  uppercase pt-24  max-[768px]:pt-8 "
+				"bg-[url('/img/heroBg.png')] min-h-dvh bg-no-repeat bg-center bg-cover text-white  uppercase mt-40  max-[768px]:pt-8 "
 			}
 		>
 			<div className='container '>
@@ -61,7 +61,11 @@ const HeroBlock = () => {
 						<p className='ml-[500px] max-[1200px]:ml-36'>систем хранения!</p>
 					</div>
 					<Button classname='w-full text-lg py-[10px] min-[769px]:hidden  uppercase  mt-auto pb-3  max-[769px]:text-sm bg-custom-black text-w'>
-						<Link href='/' className=' ' onClick={e => e.stopPropagation()}>
+						<Link
+							href='tel:+79213595153'
+							className=' '
+							onClick={e => e.stopPropagation()}
+						>
 							вызвать замерщика
 						</Link>
 					</Button>
