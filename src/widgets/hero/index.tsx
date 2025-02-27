@@ -19,7 +19,7 @@ const HeroBlock = () => {
 			ref={observeRef}
 			id='hero'
 			className={
-				"bg-[url('/img/heroBg.png')] min-h-dvh bg-no-repeat bg-center bg-cover text-white  uppercase mt-20  max-[768px]:pt-8 "
+				"bg-[url('/img/heroBg.png')] min-h-dvh bg-no-repeat bg-center bg-cover text-white  uppercase pt-20  max-[768px]:pt-8 "
 			}
 		>
 			<div className='container '>
