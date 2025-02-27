@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 		'titangs, системы хранения, Системы хранения, двери купе, двери-купе, двери, купе, хранения, двери-купе купить, wardrobe',
 
 	robots: 'index, follow',
-	icons: { icon: '/img/favicon.ico' },
+	icons: { icon: 'favicon.ico' },
 	openGraph: {
 		title: 'Системы хранения',
 		description:
