@@ -10,27 +10,27 @@ const getAllData = async () => {
 	return {
 		wardrobe: [
 			{
-				title: 'SpaceSaver',
+				title: '',
 				href: '/img/wardrobe.png'
 			},
 			{
-				title: 'OrganizeIt',
+				title: '',
 				href: '/img/wardrobe1.png'
 			},
 			{
-				title: 'WardrobeWizard',
+				title: '',
 				href: '/img/wardrobe2.png'
 			},
 			{
-				title: 'ClosetPro',
+				title: '',
 				href: '/img/wardrobe3.png'
 			},
 			{
-				title: 'NeatStack',
+				title: '',
 				href: '/img/wardrobe4.png'
 			},
 			{
-				title: 'StyleBox',
+				title: '',
 				href: '/img/wardrobe5.png'
 			}
 		],
