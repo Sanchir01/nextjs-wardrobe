@@ -7,9 +7,6 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
 	title: 'Системы хранения',
-	verification: {
-		yandex: '6c676881d5a0ee82'
-	},
 	description:
 		'Купите качественные системы хранения и двери-купе в Санкт-Петербурге по выгодным ценам',
 	keywords:
@@ -56,6 +53,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<head>
+				<meta name='yandex-verification' content='6c676881d5a0ee82' />
 				<Script
 					id='tmr-code'
 					strategy='afterInteractive'
