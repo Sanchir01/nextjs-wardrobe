@@ -4,6 +4,7 @@ import Header from '~/widgets/header'
 import Footer from '~/widgets/footer'
 import YandexMetrika from '~/providers'
 import Script from 'next/script'
+import YandexMetrikaSeo from '~/providers/yandexseo'
 
 export const metadata: Metadata = {
 	title: 'Системы хранения',
@@ -90,7 +91,7 @@ export default function RootLayout({
 				</main>
 				<Footer />
 			</body>
-
+			<YandexMetrikaSeo enabled={!!(process.env.NODE_ENV === 'production')} />
 			<YandexMetrika enabled={!!(process.env.NODE_ENV === 'production')} />
 		</html>
 	)
