@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 		icon: [
 			'favicon-16x16.png',
 			'favicon-32x32.png',
+			'favicon-96x96.ico',
 			'favicon.ico',
 			'favicon.192x192.ico',
 			'favicon.512x512.ico',
