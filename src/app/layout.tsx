@@ -23,7 +23,9 @@ export const metadata: Metadata = {
 			'favicon.512x512.ico',
 			'favicon.256x256.ico'
 		],
-		origin: 'https://system-storage.ru'
+		apple: 'apple-touch-icon.png',
+		origin: 'https://system-storage.ru',
+		shortcut: 'favicon.cio'
 	},
 	openGraph: {
 		title: 'Системы хранения',
