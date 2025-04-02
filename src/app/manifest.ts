@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
 	return {
 		lang: 'ru-RU',
 		scope: '/',
-		name: 'Системы хранения',
+		name: 'Гардеробные системы хранения',
 		short_name: 'Wardrobe',
 		description:
 			'Купите качественные системы хранения и двери-купе в Санкт-Петербурге по выгодным ценам',

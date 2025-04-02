@@ -2,8 +2,7 @@ import type { NextConfig } from 'next'
 import withPWAInit from '@ducanh2912/next-pwa'
 
 const withPwa = withPWAInit({
-	dest: 'public/pwa',
-
+	dest: 'public/pwa'
 })
 
 const nextConfig: NextConfig = {

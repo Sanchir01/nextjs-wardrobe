@@ -59,16 +59,6 @@ const getAllData = async () => {
 				href: '/img/door4.png',
 				alt: 'door',
 				loading: 'lazy'
-			},
-			{
-				href: '/img/door5.png',
-				alt: 'door',
-				loading: 'lazy'
-			},
-			{
-				href: '/img/door6.png',
-				alt: 'door',
-				loading: 'lazy'
 			}
 		],
 		reviews: [
