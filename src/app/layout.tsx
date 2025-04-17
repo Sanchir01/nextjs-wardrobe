@@ -91,6 +91,15 @@ export default function RootLayout({
 						`
 					}}
 				/>
+				<noscript>
+					<div>
+						<img
+							src='https://top-fwz1.mail.ru/counter?id=3618541;js=na'
+							style={{ position: 'absolute', left: '-9999px' }}
+							alt='Top.Mail.Ru'
+						/>
+					</div>
+				</noscript>
 			</head>
 			<body className=''>
 				<Header />
